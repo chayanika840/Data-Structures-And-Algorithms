@@ -1,0 +1,14 @@
+def bubblesort(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+                swapped=True
+                if swapped==False:
+                    break
+                    arr=[1,2,3,4,8,9,5,7,6]
+                    bubblesort(arr)
+                    print("Sorted array is: ")
+                    for i in range (len(arr)):
+                        print("%d" % arr[i])
